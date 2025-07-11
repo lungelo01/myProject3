@@ -1,0 +1,32 @@
+{% extends 'master.html' %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}signup{% endblock %}</title>
+  </head>
+  <body>
+    {% block content %}
+
+     <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'home' %}">The Blues Brothers</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href = "{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'contact' %}"> CONTACT </a></li>
+                    <li><a href = "{% url 'members' %}">MEMBERS DETAILS</a></li>
+                </ul>
+            </div>
+        </nav>
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type = "text" name = "name" /> <br />
+    <button type="submit">Log in</button>
+  </form>
+{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{% extends "master.html" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Contact{% endblock %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background-color: rgb(128, 116, 116);
+            }
+        </style>
+    </head>
+    <body>
+        {% block content %}
+
+        <div class = "container">
+
+            <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'home' %}">The Blues Brothers</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href = "{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'members' %}"> MEMBER DETAILS</a></li>
+                    <li><a href = "{% url 'login' %}">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+            <form method = "post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                name<br />
+                <input type = "text" name = "name" /> <br />
+                <textarea placeholder="Type your message"></textarea>
+                <h1>Contact</h1>
+                <p>Phone Number: 888 888 8888</p>
+            </form>
+            <button type="submit">SUBMIT</button>
+        </div>
+        {% endblock %}
+    </body>
+</html>

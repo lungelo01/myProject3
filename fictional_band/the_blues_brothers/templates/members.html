@@ -1,0 +1,53 @@
+{% extends "master.html" %}
+
+<!Doctype html>
+<html>
+    <head>
+        <title>{% block title %}details{% endblock %}</title>
+    </head>
+    <body>
+        {% block content %}
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{% url 'home' %}">The Blues Brothers</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href = "{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'contact' %}"> CONTACT </a></li>
+                    <li><a href = "{% url 'login' %}">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2>Cast</h2>
+                <p>John Belushi as "Joliet" Jake Blues, a former blues singer, paroled from prison after three years[6]<br />
+                Dan Aykroyd as Elwood J. Blues, Jake's blood brother, also a former blues singer[6]<br />
+                James Brown as the Reverend Cleophus James, pastor of the Triple Rock Baptist Church. His musical sermon "The Old Landmark" causes Jake to have an epiphany[6]<br/>
+                James Brown as the Reverend Cleophus James, pastor of the Triple Rock Baptist Church. His musical sermon "The Old Landmark" causes Jake to have an epiphany[6]<br />
+                Cab Calloway as Curtis, an old friend/father figure of the brothers, who suggests they visit the church, and helps them advertise the show and performs "Minnie the Moocher" for the audience[6]<br/>
+                Ray Charles as Ray, a blind music store owner, who performs "Shake a Tail Feather" to demonstrate the effectiveness of the instruments he sells[6]<br/>
+                Aretha Franklin as Mrs. Murphy, Matt Murphy's wife, who owns a soul food restaurant with him. She performs "Think" to persuade him not to join the band[6]<br />
+                Steve "The Colonel" Cropper – lead guitar; a member of Murph and the Magic Tones[6]<br />
+                Donald "Duck" Dunn – bass guitar; a member of Murph and the Magic Tones[6]<br/>
+                Murphy Dunne ("Murph") – keyboards; lead singer of Murph and the Magic Tones[6]<br/>
+                Willie "Too Big" Hall – drums; a member of Murph and the Magic Tones[6]<br />
+                Tom "Bones" Malone – trombone, saxophone; a member of Murph and the Magic Tones[6]<br/>
+                "Blue Lou" Marini – saxophone; the dishwasher at the soul food restaurant[6]<br/>
+                Matt "Guitar" Murphy – lead guitar; the cook at the soul food restaurant[6]<br/>
+                "Mr. Fabulous" Alan Rubin – trumpet; the maitre d' at the Chez Paul restaurant<br/>
+                Carrie Fisher as the Mystery Woman, Jake's former fiancée, who tries to kill him for leaving her at the altar[6]<br/>
+                John Candy as Burton Mercer, Jake's parole officer assisting the police in their hunt for the Blues Brothers[6]<br/>
+                Henry Gibson as the Head Nazi, the leader of a local American National Socialist White People's Party[6]<br/>
+                Twiggy as girl waiting at the gas station[6]<br/>
+                John Lee Hooker as Street Slim, a man singing "Boom Boom" together with a small band on Maxwell Street[citation needed]<br/>
+                Kathleen Freeman as Sister Mary Stigmata, AKA "The Penguin", the nun who leads the orphanage where the brothers grew up[6]<br/>
+                Steve Lawrence as Maury Sline, the agent who organized and booked many of the Blues Brothers' performances before Jake was sent to jail[7]<br/>
+                Frank Oz as the corrections officer who returns Jake's possessions to him at the beginning of the film[6]<br/>
+                Jeff Morris as Bob, the owner of Bob's Country Bunker[citation needed]<br/>
+                Charles Napier as Tucker McElroy, lead singer and Winnebago driver of the Good Ole Boys[citation needed]<br/>
+                Steven Williams as Trooper Mount, one of the cops who follows Jake and Elwood from the start[6]<br/>
+                John Landis as Trooper La Fong, a cop who chases the Bluesmobile at the mall</p>
+        {% endblock %}
+    </body>
+</html>

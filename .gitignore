@@ -1,0 +1,37 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django migrations
+**/migrations/
+*.sqlite3
+
+# Logs and local settings
+*.log
+*.pot
+*.mo
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Media and static files
+/media/
+/staticfiles/
+/node_modules/

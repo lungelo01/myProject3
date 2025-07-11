@@ -28,6 +28,7 @@ def login(request):
 
 
 def contact_view(request):
+    """A view request a contact form"""
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():

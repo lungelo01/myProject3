@@ -33,7 +33,7 @@ For support, email Lungelo@gmail.com
 Clone the project
 
 ```bash
-  git clone https://github.com/lungelo01/myProject4
+  git clone https://github.com/lungelo01/myProject3
 ```
 
 
@@ -49,5 +49,4 @@ run with virtual environment
     python manage.py runserver
     "# consolidation_project_consolidation" 
 ```
-"# myProject3" 
-"# myProject4" 
+"# myProject3"  
